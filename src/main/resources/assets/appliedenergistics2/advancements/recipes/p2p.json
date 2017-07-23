@@ -5,10 +5,10 @@
       "data": 460
     },
     "title": {
-      "translate": "achievement.ae2.P2P"
+      "translate": "advancement.ae2.P2P"
     },
     "description": {
-      "translate": "achievement.ae2.P2P.desc"
+      "translate": "advancement.ae2.P2P.desc"
     },
     "frame": "task"
   },

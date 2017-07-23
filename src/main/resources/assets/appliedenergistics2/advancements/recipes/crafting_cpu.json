@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:crafting_storage_64k"
     },
     "title": {
-      "translate": "achievement.ae2.CraftingCPU"
+      "translate": "advancement.ae2.CraftingCPU"
     },
     "description": {
-      "translate": "achievement.ae2.CraftingCPU.desc"
+      "translate": "advancement.ae2.CraftingCPU.desc"
     },
     "frame": "task"
   },

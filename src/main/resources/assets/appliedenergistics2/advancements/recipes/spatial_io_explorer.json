@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:spatial_storage_cell_128_cubed"
     },
     "title": {
-      "translate": "achievement.ae2.SpatialIOExplorer"
+      "translate": "advancement.ae2.SpatialIOExplorer"
     },
     "description": {
-      "translate": "achievement.ae2.SpatialIOExplorer.desc"
+      "translate": "advancement.ae2.SpatialIOExplorer.desc"
     },
     "frame": "task"
   },

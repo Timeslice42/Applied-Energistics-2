@@ -5,10 +5,10 @@
       "data": 220
     },
     "title": {
-      "translate": "achievement.ae2.StorageBus"
+      "translate": "advancement.ae2.StorageBus"
     },
     "description": {
-      "translate": "achievement.ae2.StorageBus.desc"
+      "translate": "advancement.ae2.StorageBus.desc"
     },
     "frame": "task"
   },

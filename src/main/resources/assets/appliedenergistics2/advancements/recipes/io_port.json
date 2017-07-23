@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:io_port"
     },
     "title": {
-      "translate": "achievement.ae2.IOPort"
+      "translate": "advancement.ae2.IOPort"
     },
     "description": {
-      "translate": "achievement.ae2.IOPort.desc"
+      "translate": "advancement.ae2.IOPort.desc"
     },
     "frame": "task"
   },

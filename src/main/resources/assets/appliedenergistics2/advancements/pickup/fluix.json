@@ -5,10 +5,10 @@
       "data": 7
     },
     "title": {
-      "translate": "achievement.ae2.Fluix"
+      "translate": "advancement.ae2.Fluix"
     },
     "description": {
-      "translate": "achievement.ae2.Fluix.desc"
+      "translate": "advancement.ae2.Fluix.desc"
     },
     "frame": "task"
   },

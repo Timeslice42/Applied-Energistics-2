@@ -5,10 +5,10 @@
       "data": 15
     },
     "title": {
-      "translate": "achievement.ae2.Presses"
+      "translate": "advancement.ae2.Presses"
     },
     "description": {
-      "translate": "achievement.ae2.Presses.desc"
+      "translate": "advancement.ae2.Presses.desc"
     },
     "frame": "task"
   },

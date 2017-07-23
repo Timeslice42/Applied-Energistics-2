@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:sky_compass"
     },
     "title": {
-      "translate": "achievement.ae2.Compass"
+      "translate": "advancement.ae2.Compass"
     },
     "description": {
-      "translate": "achievement.ae2.Compass.desc"
+      "translate": "advancement.ae2.Compass.desc"
     },
     "frame": "task"
   },

@@ -5,10 +5,10 @@
       "data": 360
     },
     "title": {
-      "translate": "achievement.ae2.CraftingTerminal"
+      "translate": "advancement.ae2.CraftingTerminal"
     },
     "description": {
-      "translate": "achievement.ae2.CraftingTerminal.desc"
+      "translate": "advancement.ae2.CraftingTerminal.desc"
     },
     "frame": "task"
   },

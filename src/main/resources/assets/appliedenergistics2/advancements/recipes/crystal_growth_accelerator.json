@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:quartz_growth_accelerator"
     },
     "title": {
-      "translate": "achievement.ae2.CrystalGrowthAccelerator"
+      "translate": "advancement.ae2.CrystalGrowthAccelerator"
     },
     "description": {
-      "translate": "achievement.ae2.CrystalGrowthAccelerator.desc"
+      "translate": "advancement.ae2.CrystalGrowthAccelerator.desc"
     },
     "frame": "task"
   },

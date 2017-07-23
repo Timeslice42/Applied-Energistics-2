@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:interface"
     },
     "title": {
-      "translate": "achievement.ae2.Recursive"
+      "translate": "advancement.ae2.Recursive"
     },
     "description": {
-      "translate": "achievement.ae2.Recursive.desc"
+      "translate": "advancement.ae2.Recursive.desc"
     },
     "frame": "task"
   },

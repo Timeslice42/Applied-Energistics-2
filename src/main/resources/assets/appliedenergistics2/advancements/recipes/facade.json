@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:facade"
     },
     "title": {
-      "translate": "achievement.ae2.Facade"
+      "translate": "advancement.ae2.Facade"
     },
     "description": {
-      "translate": "achievement.ae2.Facade.desc"
+      "translate": "advancement.ae2.Facade.desc"
     },
     "frame": "task"
   },

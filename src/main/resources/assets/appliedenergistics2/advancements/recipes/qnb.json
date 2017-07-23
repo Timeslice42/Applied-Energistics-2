@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:quantum_link"
     },
     "title": {
-      "translate": "achievement.ae2.QNB"
+      "translate": "advancement.ae2.QNB"
     },
     "description": {
-      "translate": "achievement.ae2.QNB.desc"
+      "translate": "advancement.ae2.QNB.desc"
     },
     "frame": "task"
   },

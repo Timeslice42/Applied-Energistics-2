@@ -5,10 +5,10 @@
       "data": 16
     },
     "title": {
-      "translate": "achievement.ae2.GlassCable"
+      "translate": "advancement.ae2.GlassCable"
     },
     "description": {
-      "translate": "achievement.ae2.GlassCable.desc"
+      "translate": "advancement.ae2.GlassCable.desc"
     },
     "frame": "task"
   },

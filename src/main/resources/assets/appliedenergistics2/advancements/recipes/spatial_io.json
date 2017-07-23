@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:spatial_io_port"
     },
     "title": {
-      "translate": "achievement.ae2.SpatialIO"
+      "translate": "advancement.ae2.SpatialIO"
     },
     "description": {
-      "translate": "achievement.ae2.SpatialIO.desc"
+      "translate": "advancement.ae2.SpatialIO.desc"
     },
     "frame": "task"
   },

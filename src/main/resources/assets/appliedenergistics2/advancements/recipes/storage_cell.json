@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:storage_cell_64k"
     },
     "title": {
-      "translate": "achievement.ae2.StorageCell"
+      "translate": "advancement.ae2.StorageCell"
     },
     "description": {
-      "translate": "achievement.ae2.StorageCell.desc"
+      "translate": "advancement.ae2.StorageCell.desc"
     },
     "frame": "task"
   },

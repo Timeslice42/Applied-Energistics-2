@@ -5,10 +5,10 @@
       "data": 56
     },
     "title": {
-      "translate": "achievement.ae2.Networking2"
+      "translate": "advancement.ae2.Networking2"
     },
     "description": {
-      "translate": "achievement.ae2.Networking2.desc"
+      "translate": "advancement.ae2.Networking2.desc"
     },
     "frame": "task"
   },

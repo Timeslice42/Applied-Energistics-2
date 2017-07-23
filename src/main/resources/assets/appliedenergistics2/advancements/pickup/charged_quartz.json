@@ -5,10 +5,10 @@
       "data": 1
     },
     "title": {
-      "translate": "achievement.ae2.ChargedQuartz"
+      "translate": "advancement.ae2.ChargedQuartz"
     },
     "description": {
-      "translate": "achievement.ae2.ChargedQuartz.desc"
+      "translate": "advancement.ae2.ChargedQuartz.desc"
     },
     "frame": "task"
   },

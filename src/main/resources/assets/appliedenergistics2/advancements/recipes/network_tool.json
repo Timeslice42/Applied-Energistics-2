@@ -4,10 +4,10 @@
       "item": "appliedenergistics2:network_tool"
     },
     "title": {
-      "translate": "achievement.ae2.NetworkTool"
+      "translate": "advancement.ae2.NetworkTool"
     },
     "description": {
-      "translate": "achievement.ae2.NetworkTool.desc"
+      "translate": "advancement.ae2.NetworkTool.desc"
     },
     "frame": "task"
   },

@@ -5,10 +5,10 @@
       "data": 340
     },
     "title": {
-      "translate": "achievement.ae2.PatternTerminal"
+      "translate": "advancement.ae2.PatternTerminal"
     },
     "description": {
-      "translate": "achievement.ae2.PatternTerminal.desc"
+      "translate": "advancement.ae2.PatternTerminal.desc"
     },
     "frame": "task"
   },
