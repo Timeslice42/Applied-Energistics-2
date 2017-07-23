@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:sky_compass"
+    },
+    "title": {
+      "translate": "achievement.ae2.Compass"
+    },
+    "description": {
+      "translate": "achievement.ae2.Compass.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:root",
+  "criteria": {
+    "has_sky_compass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:sky_compass"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sky_compass"
+    ]
+  ]
+}

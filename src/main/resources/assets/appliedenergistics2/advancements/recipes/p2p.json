@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:part",
+      "data": 460
+    },
+    "title": {
+      "translate": "achievement.ae2.P2P"
+    },
+    "description": {
+      "translate": "achievement.ae2.P2P.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:recipes/controller",
+  "criteria": {
+    "has_p2p_me": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:part",
+            "data": 460
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_p2p_me"
+    ]
+  ]
+}

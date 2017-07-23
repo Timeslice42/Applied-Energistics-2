@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:facade"
+    },
+    "title": {
+      "translate": "achievement.ae2.Facade"
+    },
+    "description": {
+      "translate": "achievement.ae2.Facade.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:root",
+  "criteria": {
+    "has_facade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:facade"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_facade"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:part",
+      "data": 56
+    },
+    "title": {
+      "translate": "achievement.ae2.Networking2"
+    },
+    "description": {
+      "translate": "achievement.ae2.Networking2.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:recipes/controller",
+  "criteria": {
+    "has_networking2": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "has_networking2"
+    ]
+  ]
+}

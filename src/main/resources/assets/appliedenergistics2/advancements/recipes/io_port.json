@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:io_port"
+    },
+    "title": {
+      "translate": "achievement.ae2.IOPort"
+    },
+    "description": {
+      "translate": "achievement.ae2.IOPort.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:recipes/storage_cell",
+  "criteria": {
+    "has_io_port": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:io_port"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_io_port"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:controller"
+    },
+    "title": {
+      "translate": "advancements.nether.root.title"
+    },
+    "description": {
+      "translate": "advancements.nether.root.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "type": "forge:ore_dict",
+            "ore": "crystalCertusQuartz"
+          }
+        ]
+      }
+    }
+  }
+}

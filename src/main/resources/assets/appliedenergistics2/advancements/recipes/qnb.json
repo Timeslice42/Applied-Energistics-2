@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:quantum_link"
+    },
+    "title": {
+      "translate": "achievement.ae2.QNB"
+    },
+    "description": {
+      "translate": "achievement.ae2.QNB.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:root",
+  "criteria": {
+    "has_quantum_link": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:quantum_link"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_quantum_link"
+    ]
+  ]
+}

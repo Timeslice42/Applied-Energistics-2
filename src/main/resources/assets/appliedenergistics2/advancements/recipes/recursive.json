@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:interface"
+    },
+    "title": {
+      "translate": "achievement.ae2.Recursive"
+    },
+    "description": {
+      "translate": "achievement.ae2.Recursive.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:recipes/controller",
+  "criteria": {
+    "has_interface": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:interface"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_interface"
+    ]
+  ]
+}

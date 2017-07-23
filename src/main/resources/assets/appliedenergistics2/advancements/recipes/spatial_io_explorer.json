@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "appliedenergistics2:spatial_storage_cell_128_cubed"
+    },
+    "title": {
+      "translate": "achievement.ae2.SpatialIOExplorer"
+    },
+    "description": {
+      "translate": "achievement.ae2.SpatialIOExplorer.desc"
+    },
+    "frame": "task"
+  },
+  "parent": "appliedenergistics2:recipes/spatial_io",
+  "criteria": {
+    "has_spatial_storage_cell_128_cubed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "appliedenergistics2:spatial_storage_cell_128_cubed"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_spatial_storage_cell_128_cubed"
+    ]
+  ]
+}
