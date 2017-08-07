@@ -28,7 +28,7 @@ import net.minecraftforge.fml.common.Optional;
 
 
 @Optional.Interface( iface = "cofh.redstoneflux.api.IEnergyContainerItem", modid = "redstoneflux" )
-public abstract class RedstoneFlux extends AERootPoweredItem implements IEnergyContainerItem
+public abstract class RedstoneFlux extends IC2 implements IEnergyContainerItem
 {
 	public RedstoneFlux( final double powerCapacity )
 	{
