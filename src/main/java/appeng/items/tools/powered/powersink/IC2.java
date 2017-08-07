@@ -25,15 +25,12 @@ import ic2.api.item.IElectricItemManager;
 import ic2.api.item.ISpecialElectricItem;
 
 import appeng.api.config.PowerUnits;
-import appeng.coremod.annotations.Integration.Interface;
-import appeng.coremod.annotations.Integration.InterfaceList;
-import appeng.coremod.annotations.Integration.Method;
-import appeng.integration.IntegrationType;
+import net.minecraftforge.fml.common.Optional;
 
 
-@InterfaceList( value = {
-		@Interface( iface = "ic2.api.item.ISpecialElectricItem", iname = IntegrationType.IC2 ),
-		@Interface( iface = "ic2.api.item.IElectricItemManager", iname = IntegrationType.IC2 )
+@Optional.InterfaceList( value = {
+		@Optional.Interface( iface = "ic2.api.item.ISpecialElectricItem", modid = "ic2" ),
+		@Optional.Interface( iface = "ic2.api.item.IElectricItemManager", modid = "ic2" )
 } )
 public abstract class IC2 extends AERootPoweredItem implements IElectricItemManager, ISpecialElectricItem
 {
@@ -116,7 +113,7 @@ public abstract class IC2 extends AERootPoweredItem implements IElectricItemMana
 	}
 
 	@Override
-	@Method( iname = IntegrationType.IC2 )
+	@Optional.Method( modid = "ic2" )
 	public IElectricItemManager getManager( ItemStack itemStack )
 	{
 		return this;
