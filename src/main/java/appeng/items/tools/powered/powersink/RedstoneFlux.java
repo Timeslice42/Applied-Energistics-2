@@ -24,11 +24,10 @@ import net.minecraft.item.ItemStack;
 import cofh.redstoneflux.api.IEnergyContainerItem;
 
 import appeng.api.config.PowerUnits;
-import appeng.coremod.annotations.Integration.Interface;
-import appeng.integration.IntegrationType;
+import net.minecraftforge.fml.common.Optional;
 
 
-@Interface( iface = "cofh.redstoneflux.api.IEnergyContainerItem", iname = IntegrationType.RFItem )
+@Optional.Interface( iface = "cofh.redstoneflux.api.IEnergyContainerItem", modid = "redstoneflux" )
 public abstract class RedstoneFlux extends AERootPoweredItem implements IEnergyContainerItem
 {
 	public RedstoneFlux( final double powerCapacity )

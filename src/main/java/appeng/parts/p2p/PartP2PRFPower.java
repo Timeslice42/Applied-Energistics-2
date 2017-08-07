@@ -31,14 +31,12 @@ import cofh.redstoneflux.api.IEnergyReceiver;
 
 import appeng.api.config.PowerUnits;
 import appeng.api.parts.IPartModel;
-import appeng.coremod.annotations.Integration.Interface;
-import appeng.coremod.annotations.Integration.InterfaceList;
-import appeng.integration.IntegrationType;
 import appeng.items.parts.PartModels;
 import appeng.me.GridAccessException;
+import net.minecraftforge.fml.common.Optional;
 
 
-@InterfaceList( value = { @Interface( iface = "cofh.redstoneflux.api.IEnergyReceiver", iname = IntegrationType.RF ) } )
+@Optional.Interface( iface = "cofh.redstoneflux.api.IEnergyReceiver", modid = "redstoneflux" )
 public final class PartP2PRFPower extends PartP2PTunnel<PartP2PRFPower> implements IEnergyReceiver
 {
 	private static final P2PModels MODELS = new P2PModels( "part/p2p/p2p_tunnel_rf" );

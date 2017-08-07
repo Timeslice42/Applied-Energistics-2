@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nonnull;
 
+import appeng.integration.IntegrationType;
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Lists;
 
@@ -132,10 +133,6 @@ public final class AppEng
 	@EventHandler
 	private void preInit( final FMLPreInitializationEvent event )
 	{
-		if( !Loader.isModLoaded( "appliedenergistics2-core" ) )
-		{
-			AppEng.proxy.missingCoreMod();
-		}
 		MinecraftForge.EVENT_BUS.register( this.registration );
 
 		final Stopwatch watch = Stopwatch.createStarted();
@@ -163,6 +160,11 @@ public final class AppEng
 		if( AEConfig.instance().isFeatureEnabled( AEFeature.FACADES ) )
 		{
 			CreativeTabFacade.init();
+		}
+
+		for( final IntegrationType type : IntegrationType.values() )
+		{
+			IntegrationRegistry.INSTANCE.add( type );
 		}
 
 		this.registration.preInitialize( event );

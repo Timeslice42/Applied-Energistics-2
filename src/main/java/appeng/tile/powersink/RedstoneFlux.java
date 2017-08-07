@@ -24,11 +24,10 @@ import net.minecraft.util.EnumFacing;
 import cofh.redstoneflux.api.IEnergyReceiver;
 
 import appeng.api.config.PowerUnits;
-import appeng.coremod.annotations.Integration.Interface;
-import appeng.integration.IntegrationType;
+import net.minecraftforge.fml.common.Optional;
 
 
-@Interface( iname = IntegrationType.RF, iface = "cofh.redstoneflux.api.IEnergyReceiver" )
+@Optional.Interface( iface = "cofh.redstoneflux.api.IEnergyReceiver", modid = "redstoneflux" )
 public abstract class RedstoneFlux extends AERootPoweredTile implements IEnergyReceiver
 {
 	@Override
