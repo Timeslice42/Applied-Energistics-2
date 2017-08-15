@@ -25,13 +25,8 @@ import ic2.api.item.IElectricItemManager;
 import ic2.api.item.ISpecialElectricItem;
 
 import appeng.api.config.PowerUnits;
-import net.minecraftforge.fml.common.Optional;
 
 
-@Optional.InterfaceList( value = {
-		@Optional.Interface( iface = "ic2.api.item.ISpecialElectricItem", modid = "ic2" ),
-		@Optional.Interface( iface = "ic2.api.item.IElectricItemManager", modid = "ic2" )
-} )
 public abstract class IC2 extends AERootPoweredItem implements IElectricItemManager, ISpecialElectricItem
 {
 	public IC2( double powerCapacity )
@@ -113,7 +108,6 @@ public abstract class IC2 extends AERootPoweredItem implements IElectricItemMana
 	}
 
 	@Override
-	@Optional.Method( modid = "ic2" )
 	public IElectricItemManager getManager( ItemStack itemStack )
 	{
 		return this;

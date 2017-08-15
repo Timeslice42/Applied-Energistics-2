@@ -27,7 +27,7 @@ import appeng.api.config.PowerUnits;
 /**
  * Adapts an {@link IExternalPowerSink} to Forges {@link net.darkhax.tesla.api.ITeslaConsumer}.
  */
-class TeslaEnergyAdapter implements ITeslaConsumer
+public class TeslaEnergyAdapter implements ITeslaConsumer
 {
 
 	private final IExternalPowerSink sink;

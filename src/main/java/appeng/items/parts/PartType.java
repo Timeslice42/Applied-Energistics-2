@@ -64,7 +64,6 @@ import appeng.parts.p2p.PartP2PFluids;
 import appeng.parts.p2p.PartP2PIC2Power;
 import appeng.parts.p2p.PartP2PItems;
 import appeng.parts.p2p.PartP2PLight;
-import appeng.parts.p2p.PartP2PRFPower;
 import appeng.parts.p2p.PartP2PRedstone;
 import appeng.parts.p2p.PartP2PTunnelME;
 import appeng.parts.reporting.PartConversionMonitor;
@@ -250,16 +249,6 @@ public enum PartType
 		}
 	},
 
-	P2P_TUNNEL_RF( 466, "p2p_tunnel_rf", EnumSet.of( AEFeature.P2P_TUNNEL, AEFeature.P2P_TUNNEL_RF ), EnumSet
-			.of( IntegrationType.RF ), PartP2PRFPower.class, GuiText.RFTunnel )
-	{
-		@Override
-		String getUnlocalizedName()
-		{
-			return "p2p_tunnel";
-		}
-	},
-
 	P2P_TUNNEL_LIGHT( 467, "p2p_tunnel_light", EnumSet.of( AEFeature.P2P_TUNNEL, AEFeature.P2P_TUNNEL_LIGHT ), EnumSet
 			.noneOf( IntegrationType.class ), PartP2PLight.class, GuiText.LightTunnel )
 	{
@@ -304,6 +293,7 @@ public enum PartType
 
 	PartType( final int baseMetaValue, final String itemModel, final Set<AEFeature> features, final Set<IntegrationType> integrations, final Class<? extends IPart> c, final GuiText en )
 	{
+		System.out.println( this );
 		this.baseDamage = baseMetaValue;
 		this.features = Collections.unmodifiableSet( features );
 		this.integrations = Collections.unmodifiableSet( integrations );
@@ -314,6 +304,8 @@ public enum PartType
 		this.enabled = features.stream().allMatch( AEConfig.instance()::isFeatureEnabled ) && integrations.stream()
 				.allMatch( IntegrationRegistry.INSTANCE::isEnabled );
 
+
+		System.out.println(	"is this part enabled ? " + this.isEnabled() );
 		if( this.enabled )
 		{
 			// Only load models if the part is enabled, otherwise we also run into class-loading issues while

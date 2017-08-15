@@ -65,8 +65,11 @@ public abstract class AERootPoweredTile extends AEBaseInvTile implements IAEPowe
 		{
 			this.teslaEnergyAdapter = new TeslaEnergyAdapter( this );
 		}
-		this.ic2Sink = Integrations.ic2().createPowerSink( this, this );
-		this.ic2Sink.setValidFaces( this.internalPowerSides );
+		if( Integrations.ic2().isEnabled() )
+		{
+			this.ic2Sink = Integrations.ic2().createPowerSink( this, this );
+			this.ic2Sink.setValidFaces( this.internalPowerSides );
+		}
 	}
 
 	protected EnumSet<EnumFacing> getPowerSides()

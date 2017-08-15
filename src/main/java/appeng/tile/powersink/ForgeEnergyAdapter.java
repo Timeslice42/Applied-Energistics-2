@@ -10,7 +10,7 @@ import appeng.api.config.PowerUnits;
 /**
  * Adapts an {@link IExternalPowerSink} to Forges {@link IEnergyStorage}.
  */
-class ForgeEnergyAdapter implements IEnergyStorage
+public class ForgeEnergyAdapter implements IEnergyStorage
 {
 
 	private final IExternalPowerSink sink;

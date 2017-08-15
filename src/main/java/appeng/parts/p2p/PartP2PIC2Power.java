@@ -37,13 +37,7 @@ import appeng.items.parts.PartModels;
 import appeng.me.GridAccessException;
 import appeng.me.cache.helpers.TunnelCollection;
 import appeng.util.Platform;
-import net.minecraftforge.fml.common.Optional;
 
-
-@Optional.InterfaceList( value = {
-		@Optional.Interface( iface = "ic2.api.energy.tile.IEnergySink", modid = "ic2" ),
-		@Optional.Interface( iface = "ic2.api.energy.tile.IEnergySource", modid = "ic2" )
-} )
 public class PartP2PIC2Power extends PartP2PTunnel<PartP2PIC2Power> implements IEnergySink, IEnergySource
 {
 

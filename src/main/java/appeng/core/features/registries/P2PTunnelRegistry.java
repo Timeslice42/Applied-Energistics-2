@@ -74,23 +74,6 @@ public final class P2PTunnelRegistry implements IP2PTunnelRegistry
 		this.addNewAttunement( blocks.energyCellCreative(), TunnelType.FE_POWER );
 
 		/**
-		 * RF tunnel items
-		 */
-
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 0 ), TunnelType.RF_POWER ); // leadstone
-																											// fluxduct
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 1 ), TunnelType.RF_POWER ); // hardened
-																											// fluxduct
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 2 ), TunnelType.RF_POWER ); // redstone
-																											// fluxduct
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 3 ), TunnelType.RF_POWER ); // signalum
-																											// fluxduct
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 4 ), TunnelType.RF_POWER ); // resonant
-																											// fluxduct
-		this.addNewAttunement( this.getModItem( "thermaldynamics", "duct_0", 5 ), TunnelType.RF_POWER ); // cryo-stabilized
-																											// fluxduct
-
-		/**
 		 * EU tunnel items
 		 */
 
@@ -174,15 +157,6 @@ public final class P2PTunnelRegistry implements IP2PTunnelRegistry
 		 * attune based on the ItemStack's modId
 		 */
 
-		this.addNewAttunement( "thermaldynamics", TunnelType.RF_POWER );
-		this.addNewAttunement( "thermalexpansion", TunnelType.RF_POWER );
-		this.addNewAttunement( "thermalfoundation", TunnelType.RF_POWER );
-		// TODO: Remove when confirmed that the official 1.12 version of EnderIO will support FE.
-		this.addNewAttunement( "enderio", TunnelType.RF_POWER );
-		// TODO: Remove when confirmed that the official 1.12 version of Mekanism will support FE.
-		this.addNewAttunement( "mekanism", TunnelType.RF_POWER );
-		// TODO: Remove when support for RFTools' Powercells support is added
-		this.addNewAttunement( "rftools", TunnelType.RF_POWER );
 		this.addNewAttunement( "ic2", TunnelType.IC2_POWER );
 
 	}
