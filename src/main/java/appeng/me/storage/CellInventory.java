@@ -37,7 +37,8 @@ import appeng.api.storage.ICellInventory;
 import appeng.api.storage.IMEInventory;
 import appeng.api.storage.IMEInventoryHandler;
 import appeng.api.storage.ISaveProvider;
-import appeng.api.storage.StorageChannel;
+import appeng.api.storage.IStorageChannel;
+import appeng.api.storage.channels.IItemStorageChannel;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.api.storage.data.IItemList;
 import appeng.core.AEConfig;
@@ -197,7 +198,7 @@ public class CellInventory implements ICellInventory
 
 	private boolean isEmpty( final IMEInventory meInventory )
 	{
-		return meInventory.getAvailableItems( AEApi.instance().storage().createItemList() ).isEmpty();
+		return meInventory.getAvailableItems( AEApi.instance().storage().getStorageChannel( IItemStorageChannel.class ).createList() ).isEmpty();
 	}
 
 	@Override
@@ -343,7 +344,7 @@ public class CellInventory implements ICellInventory
 	{
 		if( this.cellItems == null )
 		{
-			this.cellItems = AEApi.instance().storage().createItemList();
+			this.cellItems = AEApi.instance().storage().getStorageChannel( IItemStorageChannel.class ).createList();
 			this.loadCellItems();
 		}
 
@@ -424,7 +425,7 @@ public class CellInventory implements ICellInventory
 	{
 		if( this.cellItems == null )
 		{
-			this.cellItems = AEApi.instance().storage().createItemList();
+			this.cellItems = AEApi.instance().storage().getStorageChannel( IItemStorageChannel.class ).createList();
 		}
 
 		this.cellItems.resetStatus(); // clears totals and stuff.
@@ -497,9 +498,9 @@ public class CellInventory implements ICellInventory
 	}
 
 	@Override
-	public StorageChannel getChannel()
+	public IStorageChannel getChannel()
 	{
-		return StorageChannel.ITEMS;
+		return AEApi.instance().storage().getStorageChannel( IItemStorageChannel.class );
 	}
 
 	@Override

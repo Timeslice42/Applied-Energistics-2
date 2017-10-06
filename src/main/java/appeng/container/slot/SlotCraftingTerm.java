@@ -34,11 +34,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.items.IItemHandler;
 
+import appeng.api.AEApi;
 import appeng.api.config.Actionable;
 import appeng.api.networking.energy.IEnergySource;
 import appeng.api.networking.security.IActionSource;
 import appeng.api.storage.IMEMonitor;
 import appeng.api.storage.IStorageMonitorable;
+import appeng.api.storage.channels.IItemStorageChannel;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.api.storage.data.IItemList;
 import appeng.container.ContainerNull;
@@ -105,7 +107,7 @@ public class SlotCraftingTerm extends AppEngCraftingSlot
 			return;
 		}
 
-		final IMEMonitor<IAEItemStack> inv = this.storage.getItemInventory();
+		final IMEMonitor<IAEItemStack> inv = this.storage.getInventory( AEApi.instance().storage().getStorageChannel( IItemStorageChannel.class ) );
 		final int howManyPerCraft = this.getStack().getCount();
 		int maxTimesToCraft = 0;
 
